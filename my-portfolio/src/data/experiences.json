@@ -1,0 +1,32 @@
+[
+    {
+      "year": "Mac 2024 - Jan 2025",
+      "position": "Junior Developer",
+      "company": "Exar Technologies (M) Sdn. Bhd.",
+      "points": [
+        "Built interactive AR experiences, increasing engagement by 60%.",
+        "Developed web-based mobile games, attracting 1,000+ users and enhancing brand growth.",
+        "Optimized testing and debugging, cutting post-launch issues by 70%."
+      ]
+    },
+    {
+      "year": "Feb 2024 - Jan 2025",
+      "position": "Research Assistant (Remote)",
+      "company": "Universiti Malaysia Terengganu",
+      "points": [
+        "Analyzed open-source projects with CI/CD, evaluating maintainability and performance.",
+        "Contributed to 2 research papers publication on code maintainability and DevOps."
+      ]
+    },
+    {
+      "year": "Aug 2023 - Jan 2024",
+      "position": "Developer Intern",
+      "company": "Maybank",
+      "points": [
+        "Conducted manual and automated testing, reducing system defects by 10%.",
+        "Optimized SQL queries and improved database performance by 5%.",
+        "Enhanced UI responsiveness in React apps, boosting user satisfaction by 10%."
+      ]
+    }
+  ]
+  

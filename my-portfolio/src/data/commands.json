@@ -1,0 +1,51 @@
+[
+    {
+      "command": "/help",
+      "output": "Available Commands:\n/home - Go to Home\n/about - Go to About\n/work - Go to Work\n/experience - Jump to Experience section\n/skills - Show skills list\n/interest - Show interests\n/hi - Say hi!\n/whoami - Who is the owner of this portfolio?\n/joke - Tell a random joke\n/quote - Show an inspiring quote\n/ascii - Show some cool ASCII art\n/clear - Clear the terminal\n/help - Show this help menu"
+    },
+    {
+      "command": "/clear",
+      "output": "clear"
+    },
+    {
+      "command": "/hi",
+      "output": "Hello there! 👋 I'm Syazwani, an introvert software developer who loves turning ideas into digital reality!"
+    },
+    {
+      "command": "/whoami",
+      "output": "You're looking at Syazwani's portfolio terminal! 🚀 Passionate about Web Dev, AI, and crafting innovative solutions."
+    },
+    {
+      "command": "/joke",
+      "output": "Why do programmers prefer dark mode? Because light attracts bugs! 🐞"
+    },
+    {
+      "command": "/quote",
+      "output": "“Code is like humor. When you have to explain it, it’s bad.” – Cory House"
+    },
+    {
+      "command": "/work",
+      "output": "Navigating to Projects..."
+    },
+    {
+      "command": "/about",
+      "output": "Navigating to About..."
+    },
+    {
+      "command": "/home",
+      "output": "Returning to Home..."
+    },
+    {
+      "command": "/skills",
+      "output": "Skills: React, TypeScript, Next.js, Interactive Web Development, API Development, Database Management"
+    },
+    {
+      "command": "/interest",
+      "output": "Interests: Psychology, Healthcare, Web Dev, AI"
+    },
+    {
+      "command": "/experience",
+      "output": "Navigating to Experience..."
+    }
+  ]
+  
