@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";
 import Navigation from "../components/Navigation";
@@ -18,7 +19,10 @@ import projects from "@/data/projects.json";
 import MaintenanceModal from "./MaintenanceModal";
 
 
+
+
 const Index = () => {
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState("home");
     const [terminalInput, setTerminalInput] = useState("");
     const [selectedJob, setSelectedJob] = useState<number | null>(null);
@@ -345,7 +349,7 @@ const Index = () => {
                     setShowMaintenanceModal(false);
                     setActiveTab("about");
                 }}
-                onPlayGame={() => window.open('/game', '_blank')}
+                onPlayGame={() => navigate('/game')}
             />
 
             <Dialog open={selectedJob !== null} onOpenChange={() => setSelectedJob(null)}>
