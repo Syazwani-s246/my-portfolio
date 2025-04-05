@@ -1,11 +1,7 @@
 [
     {
       "command": "/help",
-      "output": "Available Commands:\n/home - Go to Home\n/about - Go to About\n/work - Go to Work\n/experience - Jump to Experience section\n/skills - Show skills list\n/interest - Show interests\n/hi - Say hi!\n/whoami - Who is the owner of this portfolio?\n/joke - Tell a random joke\n/quote - Show an inspiring quote\n/ascii - Show some cool ASCII art\n/clear - Clear the terminal\n/help - Show this help menu"
-    },
-    {
-      "command": "/clear",
-      "output": "clear"
+      "output": "Available Commands:\n/home - Go to Home\n/about - Go to About\n/work - Go to Work\n/experience - Jump to Experience section\n/skills - Show skills list\n/interest - Show interests\n/hi - Say hi!\n/whoami - Who is the owner of this portfolio?\n/joke - Tell a random joke\n/quote - Show an inspiring quote\n/clear - Clear the terminal\n/help - Show this help menu"
     },
     {
       "command": "/hi",
@@ -14,14 +10,6 @@
     {
       "command": "/whoami",
       "output": "You're looking at Syazwani's portfolio terminal! 🚀 Passionate about Web Dev, AI, and crafting innovative solutions."
-    },
-    {
-      "command": "/joke",
-      "output": "Why do programmers prefer dark mode? Because light attracts bugs! 🐞"
-    },
-    {
-      "command": "/quote",
-      "output": "“Code is like humor. When you have to explain it, it’s bad.” – Cory House"
     },
     {
       "command": "/work",
