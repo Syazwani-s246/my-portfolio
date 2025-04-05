@@ -265,45 +265,74 @@ const Index = () => {
                         </TabsContent>
 
                         <TabsContent value="projects" className="mt-0">
-                            <div className="space-y-3">
-                                {projects.map((project, index) => (
-                                    <motion.div
-                                        key={index}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.3, delay: index * 0.1 }}
-                                        className="bg-card rounded-xl overflow-hidden shadow-md"
-                                    >
-                                        <div
-                                            className="h-24 bg-cover bg-center"
-                                            style={{ backgroundImage: `url(${project.image})` }}
-                                        />
-                                        <div className="p-2.5">
-                                            <h3 className="text-sm font-semibold mb-1">{project.title}</h3>
-                                            <p className="text-[10px] text-muted-foreground mb-2">{project.description}</p>
-                                            <div className="flex gap-2">
-                                                <a
-                                                    href={project.liveLink}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="flex items-center gap-0.5 text-[10px] text-primary hover:text-primary/80 transition-colors"
-                                                >
-                                                    <ExternalLink size={12} /> Live Demo
-                                                </a>
-                                                <a
-                                                    href={project.githubLink}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="flex items-center gap-0.5 text-[10px] text-muted-foreground hover:text-primary transition-colors"
-                                                >
-                                                    <GanttChart size={12} /> GitHub
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                ))}
+    <div className="space-y-3">
+        {projects.map((project, index) => {
+            const [isVideoOpen, setIsVideoOpen] = useState(false);
+
+            return (
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    className="bg-card rounded-xl overflow-hidden shadow-md"
+                >
+                    <div 
+                        className="relative cursor-pointer group"
+                        onClick={() => setIsVideoOpen(true)}
+                    >
+                        <img
+                            src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                            alt={project.title}
+                            className="w-full h-24 object-cover"
+                        />
+                        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 flex items-center justify-center transition-colors">
+                            <svg className="w-12 h-12 text-white opacity-80 group-hover:opacity-100" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="p-2.5">
+                        <h3 className="text-sm font-semibold mb-1">{project.title}</h3>
+                        <p className="text-[10px] text-muted-foreground mb-2">{project.description}</p>
+                        <div className="flex gap-2">
+                            <a
+                                href={project.liveLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-0.5 text-[10px] text-primary hover:text-primary/80 transition-colors"
+                            >
+                                <ExternalLink size={12} /> Live Demo
+                            </a>
+                            <a
+                                href={project.githubLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-0.5 text-[10px] text-muted-foreground hover:text-primary transition-colors"
+                            >
+                                <GanttChart size={12} /> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
+                        <DialogContent className="max-w-4xl w-full p-0">
+                            <div className="relative pt-[56.25%]">
+                                <iframe
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    src={`https://www.youtube.com/embed/${project.videoId}?autoplay=1`}
+                                    title={project.title}
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                />
                             </div>
-                        </TabsContent>
+                        </DialogContent>
+                    </Dialog>
+                </motion.div>
+            );
+        })}
+    </div>
+</TabsContent>
                     </Tabs>
                 </div>
             </main>

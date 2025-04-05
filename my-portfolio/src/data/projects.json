@@ -2,14 +2,14 @@
     {
       "title": "One Good Thing Journal",
       "description": "Journaling app to encourage small wins",
-      "image": "/project-good-journal.png",
+      "videoId": "IqEWMSH2YMQ",
       "liveLink": "https://yay-journal.vercel.app/",
       "githubLink": "https://github.com/Syazwani-s246/yay-journal.git"
     },
     {
       "title": "Another Project",
       "description": "Description of the second project",
-      "image": "/path-to-image.png",
+      "videoId": "ANOTHER_YOUTUBE_VIDEO_ID",
       "liveLink": "https://example.com",
       "githubLink": "https://github.com/your-username/another-project.git"
     }
