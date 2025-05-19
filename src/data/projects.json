@@ -1,10 +1,34 @@
 [
-    {
-      "title": "One Good Thing Journal",
-      "description": "Journaling app to encourage small wins",
-      "videoId": "IqEWMSH2YMQ",
-      "liveLink": "https://yay-journal.vercel.app/",
-      "githubLink": "https://github.com/Syazwani-s246/yay-journal.git"
-    }
-  ]
-  
+  {
+    "title": "One Good Thing Journal",
+    "description": "Journaling app to encourage small wins",
+    "videoId": "IqEWMSH2YMQ",
+    "liveLink": "https://yay-journal.vercel.app/",
+    "githubLink": "https://github.com/Syazwani-s246/yay-journal.git"
+  },
+  {
+    "title": "Quby Christmas AR Effect - Exar Technologies (M) Sdn. Bhd.",
+    "description": "An AR installation at EcoSanctuary Mall. Users scan a festive backdrop using their phone, revealing an AR animation featuring Quby, enhancing the Christmas mall experience.",
+    "videoId": "2HScnoXO5Xo"
+  },
+  {
+    "title": "Chery AR TikTok Game - Exar Technologies (M) Sdn. Bhd.",
+    "description": "A branded TikTok filter game where users tilt their heads to steer a car and avoid obstacles. Showcases the new Chery vehicle model through playful, viral interaction.",
+    "videoId": "hTSpil9i4nU"
+  },
+  {
+    "title": "AEON AR Game - Exar Technologies (M) Sdn. Bhd.",
+    "description": "An interactive head-tilting game displayed on an LCD screen. Players collect \"protection points\" while avoiding danger — designed to engage mall visitors with fun, body-based interaction.",
+    "videoId": "VR57Ro2EP48"
+  },
+  {
+    "title": "Clorox Swipe Shine - Exar Technologies (M) Sdn. Bhd.",
+    "description": "A swipe-to-match puzzle game inspired by Candy Crush. Users clean virtual messes to earn points - top scorers win prizes from Clorox.",
+    "videoId": "sY6_Dscaszc"
+  },
+  {
+    "title": "Clorox Slithering Clean - Exar Technologies (M) Sdn. Bhd.",
+    "description": "A web-based Chinese New Year game inspired by the classic Nokia snake. Players guide a cleaning snake to collect items.",
+    "videoId": "dyc9wHxYuNM"
+  }
+]
